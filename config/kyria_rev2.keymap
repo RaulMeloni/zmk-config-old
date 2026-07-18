@@ -44,10 +44,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&kp PAGE_UP    &kp Q  &kp W  &kp F  &kp P    &kp SQT                                                           &kp J      &kp L  &kp U      &kp Y       &kp BACKSPACE  &kp HOME
-&kp TAB        &kp A  &kp R  &kp S  &kp T    &kp G                                                             &kp M      &kp N  &kp E      &kp I       &kp O          &none
-&kp PAGE_DOWN  &kp Z  &kp X  &kp C  &kp D    &kp V    &kp LEFT_ALT  &kp K_BACK  &kp K_FORWARD  &kp LEFT_WIN    &kp K      &kp H  &kp SLASH  &kp PERIOD  &kp COMMA      &kp END
-                             &none  &kp INS  &none    &kp LCTRL     &kp ENTER   &kp ESC        &kp LEFT_SHIFT  &kp SPACE  &none  &none
+&kp PAGE_UP    &kp Q  &kp W  &kp F  &kp P    &kp B                                                           &kp J      &kp L  &kp U      &kp Y       &kp BACKSPACE  &kp HOME
+&kp TAB        &kp A  &kp R  &kp S  &kp T    &kp G                                                           &kp M      &kp N  &kp E      &kp I       &kp O          &none
+&kp PAGE_DOWN  &kp Z  &kp X  &kp C  &kp D    &kp V  &kp LEFT_ALT  &kp K_BACK  &kp K_FORWARD  &kp LEFT_WIN    &kp K      &kp H  &kp SLASH  &kp PERIOD  &kp COMMA      &kp END
+                             &none  &kp INS  &none  &kp LCTRL     &kp ENTER   &kp ESC        &kp LEFT_SHIFT  &kp SPACE  &none  &none
             >;
         };
 
