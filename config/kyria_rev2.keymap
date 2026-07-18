@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -48,61 +47,6 @@
 &kp TAB        &kp A  &kp R  &kp S  &kp T    &kp G                                                           &kp M      &kp N  &kp E      &kp I       &kp O          &none
 &kp PAGE_DOWN  &kp Z  &kp X  &kp C  &kp D    &kp V  &kp LEFT_ALT  &kp K_BACK  &kp K_FORWARD  &kp LEFT_WIN    &kp K      &kp H  &kp SLASH  &kp PERIOD  &kp COMMA      &kp END
                              &none  &kp INS  &none  &kp LCTRL     &kp ENTER   &kp ESC        &kp LEFT_SHIFT  &kp SPACE  &none  &none
-            >;
-        };
-
-        number_layer {
-            bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            label = "num";
-        };
-
-        function_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
-&trans  &trans  &trans  &trans  &trans  &trans                                  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        arrow_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &kp LEFT  &kp DOWN     &kp UP         &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans         &trans     &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans
-            >;
-        };
-
-        bluetooth_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |       |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
-            // |       |      |      |BTSEL3|BTSEL4|      |                                         |      |      |      |      |      |      |
-            // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
-
-            bindings = <
-&none  &none         &none         &none         &none         &none                                     &none       &none  &none  &none  &none  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                              &bt BT_CLR  &none  &none  &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none  &none  &none  &none  &none       &none  &none  &none  &none  &none
-                                   &none         &none         &none         &none  &none  &none  &none  &none       &none  &none
-            >;
-
-            label = "bt";
-        };
-
-        gaming_layer {
-            bindings = <
-&kp ESC    &kp Q  &kp W  &kp E   &kp R   &kp APOS                                         &kp T   &kp Y   &kp U   &kp I      &kp O    &kp P
-&kp MINUS  &kp A  &kp S  &kp D   &kp F   &kp LBKT                                         &kp G   &kp H   &kp J   &kp K      &kp L    &kp SEMI
-&kp BSLH   &kp Z  &kp X  &kp C   &kp V   &kp RBKT  &none      &trans   &trans  &trans     &kp B   &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-                         &trans  &trans  &kp LALT  &kp LSHFT  &kp TAB  &trans  &kp SPACE  &trans  &trans  &trans
             >;
         };
     };
