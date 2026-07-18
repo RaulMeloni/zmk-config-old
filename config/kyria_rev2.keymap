@@ -44,10 +44,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&layerTap_behavior 4 ESCAPE  &kp Q                          &kp W                          &kp E                       &kp R                            &kp SQT                                                                               &kp T                   &kp Y                            &kp U                       &kp I                          &kp O                          &kp P
-&kp MINUS                    &holdTap_behaviour LEFT_GUI A  &holdTap_behaviour LEFT_ALT S  &holdTap_behaviour LCTRL D  &holdTap_behaviour LEFT_SHIFT F  &layerTap_behavior 3 LEFT_BRACKET                                                     &layerTap_behavior 1 G  &holdTap_behaviour LEFT_SHIFT H  &holdTap_behaviour LCTRL J  &holdTap_behaviour LEFT_ALT K  &holdTap_behaviour LEFT_GUI L  &kp SEMICOLON
-&kp BACKSLASH                &kp Z                          &kp X                          &kp C                       &kp V                            &layerTap_behavior 2 RIGHT_BRACKET  &kp C_PLAY_PAUSE  &none    &none      &kp C_MUTE  &kp B                   &kp N                            &kp M                       &kp COMMA                      &kp PERIOD                     &kp SLASH
-                                                                                           &none                       &kp INS                          &kp TAB                             &kp BACKSPACE     &kp RET  &kp GRAVE  &kp SPACE   &kp EQUAL               &kp DELETE                       &kp RALT
+&kp PAGE_UP    &kp Q  &kp W  &kp F  &kp P    &kp SQT                                                           &kp J      &kp L  &kp U      &kp Y       &kp BACKSPACE  &kp HOME
+&kp TAB        &kp A  &kp R  &kp S  &kp T    &kp G                                                             &kp M      &kp N  &kp E      &kp I       &kp O          &none
+&kp PAGE_DOWN  &kp Z  &kp X  &kp C  &kp D    &kp V    &kp LEFT_ALT  &kp K_BACK  &kp K_FORWARD  &kp LEFT_WIN    &kp K      &kp H  &kp SLASH  &kp PERIOD  &kp COMMA      &kp END
+                             &none  &kp INS  &none    &kp LCTRL     &kp ENTER   &kp ESC        &kp LEFT_SHIFT  &kp SPACE  &none  &none
             >;
         };
 
